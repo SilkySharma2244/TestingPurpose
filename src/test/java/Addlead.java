@@ -218,7 +218,7 @@ public void secondlead() throws Exception {
 	   driver.findElement(By.xpath("//*[@id=\"save_application_btn\"]/span")).click();
 	   Thread.sleep(2000);
 }
-
+/*
 	@Test(priority=3)
 public void sortcolumn() throws Exception {
 	
@@ -399,7 +399,7 @@ public void sortcolumn() throws Exception {
 	
 	
 	}
-
+*/
 	@Test(priority=4)
 public void assignedLeads() throws Exception {
 	Thread.sleep(5000);
