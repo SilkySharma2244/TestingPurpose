@@ -44,19 +44,20 @@ public  static void initialization() throws Exception {
 	}
 
 public static void setIntialization() throws Exception {
-	File src=new File("./src/main/java/com/fitsyn/qa/config/config.properties");
-	FileInputStream fis=new FileInputStream(src);
-	Properties pro=new  Properties();
-	pro=new Properties();
-	pro.load(fis);
-String filepath="/Fitsyn/CSVFile";
-HashMap<String,Object> chromepref=new HashMap<String,Object>();
-chromepref.put("profile.default_content_setting.popups",0);
-chromepref.put("download.default_directory",filepath);
+// 	File src=new File("./src/main/java/com/fitsyn/qa/config/config.properties");
+// 	FileInputStream fis=new FileInputStream(src);
+// 	Properties pro=new  Properties();
+// 	pro=new Properties();
+// 	pro.load(fis);
+// String filepath="/Fitsyn/CSVFile";
+// HashMap<String,Object> chromepref=new HashMap<String,Object>();
+// chromepref.put("profile.default_content_setting.popups",0);
+// chromepref.put("download.default_directory",filepath);
 ChromeOptions options=new ChromeOptions();
-options.setExperimentalOption("prefs",chromepref);
+	options.setHeadless(true);
+// options.setExperimentalOption("prefs",chromepref);
 System.setProperty("webdriver.chrome.driver",pro.getProperty("ChromeDriver")); 
- driver=new ChromeDriver(options);
+  driver=new ChromeDriver(options);
 driver.get("https://demo.fitsyn.com");
 Thread.sleep(5000);
 //driver.findElement(By.xpath("//*[@id=\"login_form\"]/div[1]/input")).sendKeys("admin@uat.com");
