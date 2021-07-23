@@ -154,6 +154,7 @@ public void purgebutton() throws Exception {
 	Assert.assertEquals(stagetext,"Teststatus");
 
 	}
+	/*
     @Test(priority=3)
 	public void sortcolumn() throws Exception {
 	
@@ -310,7 +311,7 @@ public void purgebutton() throws Exception {
 	}
 	
 	
-	
+	*/
 	
 	
 
