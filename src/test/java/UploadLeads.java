@@ -86,6 +86,7 @@ lst.get(lst.size()-1).click();
 			 Thread.sleep(2000);
 			driver.findElement(By.xpath("//*[@id=\"ajax_content\"]/div/div/div/div/section/div/div[1]/form/div/div[3]//a")).click();//action
 }
+	/*
 	@Test(priority=3)
 	public void sortColumns() throws Exception {		
 			Thread.sleep(5000);
@@ -194,7 +195,7 @@ lst.get(lst.size()-1).click();
 		Assert.assertEquals(actual, expet);
 	}
 		
-			
+	*/		
 			
 			
 			
