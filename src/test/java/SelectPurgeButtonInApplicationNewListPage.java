@@ -124,6 +124,7 @@ Assert.assertEquals(stagetext,"Statusten");
 
 }
 	*/
+	/*
     @Test(priority=2)
 	public void sortcolumn() throws Exception {
 		
@@ -269,7 +270,7 @@ Assert.assertEquals(stagetext,"Statusten");
 		Thread.sleep(5000);	}
 	
 	
-	
+	*/
 	
 	
 	
