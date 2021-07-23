@@ -28,14 +28,14 @@ public class TestBase1 {
 	
 
 public  static void initialization() throws Exception {
-	File src=new File("./src/main/java/com/fitsyn/qa/config/config.properties");
-	FileInputStream fis=new FileInputStream(src);
-	Properties pro=new  Properties();
-	pro=new Properties();
-	pro.load(fis);
+// 	File src=new File("./src/main/java/com/fitsyn/qa/config/config.properties");
+// 	FileInputStream fis=new FileInputStream(src);
+// 	Properties pro=new  Properties();
+// 	pro=new Properties();
+// 	pro.load(fis);
 	System.setProperty("webdriver.chrome.driver",pro.getProperty("ChromeDriver")); 
 	driver=new ChromeDriver();
-	  driver.get(pro.getProperty("url"));
+	  driver.get("https://demo.fitsyn.com");
 			Thread.sleep(5000);
 //		driver.findElement(By.xpath("//*[@id=\"login_form\"]/div[1]/input")).sendKeys("admin@uat.com");
 //		driver.findElement(By.xpath("//*[@id=\"validation-password\"]")).sendKeys("fitsyn@wcg");//action
