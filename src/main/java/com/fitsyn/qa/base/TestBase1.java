@@ -33,7 +33,7 @@ public  static void initialization() throws Exception {
 // 	Properties pro=new  Properties();
 // 	pro=new Properties();
 // 	pro.load(fis);
-	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver"); 
+	System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe"); 
 	driver=new ChromeDriver();
 	  driver.get("https://demo.fitsyn.com");
 			Thread.sleep(5000);
