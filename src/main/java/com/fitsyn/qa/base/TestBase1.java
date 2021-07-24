@@ -54,9 +54,9 @@ public static void setIntialization() throws Exception {
 // chromepref.put("profile.default_content_setting.popups",0);
 // chromepref.put("download.default_directory",filepath);
 ChromeOptions options=new ChromeOptions();
-	options.setHeadless(true);
+	options.addArguments("headless");
 // options.setExperimentalOption("prefs",chromepref);
-System.setProperty("webdriver.chrome.driver",pro.getProperty("ChromeDriver")); 
+System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe"); 
   driver=new ChromeDriver(options);
 driver.get("https://demo.fitsyn.com");
 Thread.sleep(5000);
