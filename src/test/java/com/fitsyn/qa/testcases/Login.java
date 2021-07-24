@@ -20,7 +20,7 @@ public class Login extends TestBase1{
 	}
 	@BeforeTest
 	public void openBrowser() throws Exception {
-		setIntialization();
+		initialization();
 	}
 	
 	
