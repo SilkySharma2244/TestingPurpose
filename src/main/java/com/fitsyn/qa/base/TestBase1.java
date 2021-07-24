@@ -35,7 +35,7 @@ public  static void initialization() throws Exception {
 // 	pro.load(fis);
 	System.setProperty("webdriver.chrome.driver","/usr/bin/chromdedriver"); 
 	driver=new ChromeDriver();
-	  driver.get("https://demo.fitsyn.com");
+	  driver.get("https://demo.fitsyn.com" +18.117.251.152+ ":" + 8080 + "/wd/hub");
 			Thread.sleep(5000);
 //		driver.findElement(By.xpath("//*[@id=\"login_form\"]/div[1]/input")).sendKeys("admin@uat.com");
 //		driver.findElement(By.xpath("//*[@id=\"validation-password\"]")).sendKeys("fitsyn@wcg");//action
