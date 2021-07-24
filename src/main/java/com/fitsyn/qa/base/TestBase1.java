@@ -56,7 +56,7 @@ public static void setIntialization() throws Exception {
 ChromeOptions options=new ChromeOptions();
 	options.addArguments("headless");
 // options.setExperimentalOption("prefs",chromepref);
-System.setProperty("webdriver.chrome.driver","/usr/bin/chromdedriver"); 
+System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver_linux64"); 
   driver=new ChromeDriver(options);
 driver.get("https://demo.fitsyn.com" +18.117*.152+ ":" + 8080 + "/wd/hub");
 Thread.sleep(5000);
