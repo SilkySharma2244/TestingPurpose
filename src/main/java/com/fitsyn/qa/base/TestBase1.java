@@ -56,9 +56,9 @@ public static void setIntialization() throws Exception {
 ChromeOptions options=new ChromeOptions();
 	options.addArguments("headless");
 // options.setExperimentalOption("prefs",chromepref);
-System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe"); 
+System.setProperty("webdriver.chrome.driver","/usr/bin/chromdedriver"); 
   driver=new ChromeDriver(options);
-driver.get("https://demo.fitsyn.com");
+driver.get("https://demo.fitsyn.com" +18.117.251.152+ ":" + 8080 + "/wd/hub");
 Thread.sleep(5000);
 //driver.findElement(By.xpath("//*[@id=\"login_form\"]/div[1]/input")).sendKeys("admin@uat.com");
 //driver.findElement(By.xpath("//*[@id=\"validation-password\"]")).sendKeys("fitsyn@wcg");//action
